@@ -18,6 +18,18 @@
   "output": "CMakeFiles/projekt.dir/src/snake.cpp.obj"
 },
 {
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/projekt_tests.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\projekt_tests.dir\\tests\\test_snake.cpp.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\tests\\test_snake.cpp",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/tests/test_snake.cpp",
+  "output": "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/projekt_tests.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\projekt_tests.dir\\src\\snake.cpp.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\src\\snake.cpp",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/src/snake.cpp",
+  "output": "CMakeFiles/projekt_tests.dir/src/snake.cpp.obj"
+},
+{
   "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-build/raylib",
   "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/raylib.dir/includes_C.rsp -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=gnu99 -o CMakeFiles\\raylib.dir\\rcore.c.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\raylib-src\\src\\rcore.c",
   "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src/src/rcore.c",
@@ -184,5 +196,29 @@
   "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -g -std=c99 -Wall -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\raylib-src\\src\\external\\glfw\\src\\wgl_context.c",
   "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src/src/external/glfw/src/wgl_context.c",
   "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\googletest-src\\googlemock\\src\\gmock-all.cc",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build/googlemock",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\googletest-src\\googlemock\\src\\gmock_main.cc",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\googletest-src\\googletest\\src\\gtest-all.cc",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build/googletest",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++23 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c C:\\Users\\jakub\\PROI\\gra_achtung_die_kurve\\build\\_deps\\googletest-src\\googletest\\src\\gtest_main.cc",
+  "file": "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }
 ]

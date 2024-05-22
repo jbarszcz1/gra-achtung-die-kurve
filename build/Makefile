@@ -116,7 +116,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -204,6 +204,19 @@ projekt/fast:
 .PHONY : projekt/fast
 
 #=============================================================================
+# Target rules for targets named projekt_tests
+
+# Build rule for target.
+projekt_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 projekt_tests
+.PHONY : projekt_tests
+
+# fast build rule for target.
+projekt_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/build
+.PHONY : projekt_tests/fast
+
+#=============================================================================
 # Target rules for targets named raylib
 
 # Build rule for target.
@@ -241,6 +254,58 @@ update_mappings: cmake_check_build_system
 update_mappings/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings.dir\build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
 .PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -296,6 +361,7 @@ src/snake.obj: src/snake.cpp.obj
 # target to build an object file
 src/snake.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/snake.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/src/snake.cpp.obj
 .PHONY : src/snake.cpp.obj
 
 src/snake.i: src/snake.cpp.i
@@ -304,6 +370,7 @@ src/snake.i: src/snake.cpp.i
 # target to preprocess a source file
 src/snake.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/snake.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/src/snake.cpp.i
 .PHONY : src/snake.cpp.i
 
 src/snake.s: src/snake.cpp.s
@@ -312,7 +379,32 @@ src/snake.s: src/snake.cpp.s
 # target to generate assembly for a file
 src/snake.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/snake.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/src/snake.cpp.s
 .PHONY : src/snake.cpp.s
+
+tests/test_snake.obj: tests/test_snake.cpp.obj
+.PHONY : tests/test_snake.obj
+
+# target to build an object file
+tests/test_snake.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj
+.PHONY : tests/test_snake.cpp.obj
+
+tests/test_snake.i: tests/test_snake.cpp.i
+.PHONY : tests/test_snake.i
+
+# target to preprocess a source file
+tests/test_snake.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.i
+.PHONY : tests/test_snake.cpp.i
+
+tests/test_snake.s: tests/test_snake.cpp.s
+.PHONY : tests/test_snake.s
+
+# target to generate assembly for a file
+tests/test_snake.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.s
+.PHONY : tests/test_snake.cpp.s
 
 # Help Target
 help:
@@ -331,7 +423,12 @@ help:
 	@echo ... test
 	@echo ... update_mappings
 	@echo ... glfw
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... projekt
+	@echo ... projekt_tests
 	@echo ... raylib
 	@echo ... main.obj
 	@echo ... main.i
@@ -342,6 +439,9 @@ help:
 	@echo ... src/snake.obj
 	@echo ... src/snake.i
 	@echo ... src/snake.s
+	@echo ... tests/test_snake.obj
+	@echo ... tests/test_snake.i
+	@echo ... tests/test_snake.s
 .PHONY : help
 
 
