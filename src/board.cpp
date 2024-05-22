@@ -55,8 +55,8 @@ void Board::display_window()
             case TITLE:
             {
                 DrawRectangle(0, 0, screen_width, screen_height, BLACK);
-                DrawText("Achtung die Kurve!",20, 20, 40, RED);
-                DrawText("Add players...", 100, 100, 20, PINK);
+                DrawText("Achtung die Kurve!",200, 200, 40, RED);
+                DrawText("Add players...", 300, 300, 20, PINK);
             } break;
 
             case GAMEPLAY:
