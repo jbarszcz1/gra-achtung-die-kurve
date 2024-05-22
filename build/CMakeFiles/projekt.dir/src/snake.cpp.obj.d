@@ -1,6 +1,5 @@
 CMakeFiles/projekt.dir/src/snake.cpp.obj: \
  C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp \
- C:/Users/jakub/PROI/gra_achtung_die_kurve/headers/snake.h \
  C:/msys64/ucrt64/include/c++/13.2.0/iostream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,4 +141,6 @@ CMakeFiles/projekt.dir/src/snake.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/istream.tcc \
+ C:/msys64/ucrt64/include/c++/13.2.0/ctime \
+ C:/Users/jakub/PROI/gra_achtung_die_kurve/headers/snake.h
