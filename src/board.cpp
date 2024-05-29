@@ -19,6 +19,10 @@ struct ButtonData {
 
 Board::Board(std::vector<Snake> Players): Players(Players) {}
 
+bool operator==(const Color& lhs, const Color& rhs) {
+    return (lhs.r == rhs.r && lhs.g == rhs.g && lhs.b == rhs.b && lhs.a == rhs.a);
+}
+
 void Board::display_window()
 {
     typedef enum GameScreen { TITLE=0, GAMEPLAY, SCORE } GameScreen;
@@ -50,8 +54,8 @@ void Board::display_window()
                 {
                     if (CheckCollisionPointRec(mousePoint, button.bounds) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON))
                     {
-                        button.clicked = true;
-                        button.textBoxLeftActive = true;
+                            button.clicked = true;
+                            button.textBoxLeftActive = true;
                     }
 
                     if (button.textBoxLeftActive)
@@ -65,11 +69,13 @@ void Board::display_window()
                         }
                     }
 
+
                     if (button.clicked && !button.textBoxLeftActive)
                     {
                         button.textBoxRightActive = true;
                         button.clicked = false;
                     }
+
 
                     if (button.textBoxRightActive)
                     {
@@ -79,6 +85,17 @@ void Board::display_window()
                             button.inputKeyRight = (char)keyRight;
                             button.drawKeyRight = true;
                             button.textBoxRightActive = false;
+
+
+                            if (button.drawKeyLeft && button.drawKeyRight)
+                            {
+                                // Remove existing snake of this color if it exists
+                                Players.erase(std::remove_if(Players.begin(), Players.end(),
+                                    [&button](Snake& snake) { return snake.get_color() == button.color; }),
+                                    Players.end());
+                                // Add the new snake
+                                Players.emplace_back(button.color, button.inputKeyLeft, button.inputKeyRight);
+                            }
                         }
                     }
                 }
@@ -139,6 +156,10 @@ void Board::display_window()
             {
                 DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
                 DrawText("PLAY...", 300, 300, 40, RED);
+                for (Snake& player : Players)
+                {
+                    player.draw();
+                }
             } break;
 
             case SCORE:
