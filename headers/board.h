@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BOARD_H
+#define BOARD_H
 #include "snake.h"
 #include <vector>
 
@@ -16,3 +17,4 @@ class Board
 };
 
 bool operator==(const Color& lhs, const Color& rhs);
+#endif //BOARD_H

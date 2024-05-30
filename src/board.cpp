@@ -94,7 +94,7 @@ void Board::display_window()
                                     [&button](Snake& snake) { return snake.get_color() == button.color; }),
                                     Players.end());
                                 // Add the new snake
-                                Players.emplace_back(button.color, button.inputKeyLeft, button.inputKeyRight);
+                                Players.emplace_back(button.color, (int)std::toupper(button.inputKeyLeft), (int)std::toupper(button.inputKeyRight));
                             }
                         }
                     }
@@ -155,9 +155,10 @@ void Board::display_window()
             case GAMEPLAY:
             {
                 DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
-                DrawText("PLAY...", 300, 300, 40, RED);
+                DrawText("PLAY...", 300, 300, 40, RED); //TODO: PLay for some time and then draw snakes
                 for (Snake& player : Players)
                 {
+                    player.update();
                     player.draw();
                 }
             } break;
