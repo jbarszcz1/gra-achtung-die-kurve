@@ -56,8 +56,19 @@ void Board::display_window()
 
                     if (button.textBoxLeftActive)
                     {
+                        bool unique;
                         int keyLeft = GetCharPressed();
-                        if (keyLeft >= 32 && keyLeft <= 126)
+                        for (auto& button : buttons)
+                        {
+                            unique = false;
+                            if (char(keyLeft)==button.inputKeyLeft || char(keyLeft)==button.inputKeyRight)
+                            {
+                                break;
+                            }
+                            unique = true;
+                        }
+
+                        if (keyLeft >= 32 && keyLeft <= 126 && unique==true)
                         {
                             button.inputKeyLeft = (char)keyLeft;
                             button.drawKeyLeft = true;
@@ -73,8 +84,18 @@ void Board::display_window()
 
                     if (button.textBoxRightActive)
                     {
+                        bool unique;
                         int keyRight = GetCharPressed();
-                        if (keyRight >= 32 && keyRight <= 126)
+                        for (auto& button : buttons)
+                        {
+                            unique = false;
+                            if (char(keyRight)==button.inputKeyLeft || char(keyRight)==button.inputKeyRight)
+                            {
+                                break;
+                            }
+                            unique = true;
+                        }
+                        if (keyRight >= 32 && keyRight <= 126 && unique==true)
                         {
                             button.inputKeyRight = (char)keyRight;
                             button.drawKeyRight = true;
