@@ -9,14 +9,20 @@
 class Snake
 {
 private:
+    // Control keys and color
     Color color;
     int turn_left_key;
     int turn_right_key;
-    //int coord_x, coord_y; // Polozenie poczatkowe to chyba bedziemy losowac ?
+
+    // Position and movement control
     Vector2 position;
     float angle;
-    float speed = 2.0f;
+    float speed = 2.5f;
     std::vector<Vector2> trail;
+
+    //Gap randomising
+    int gapCounter;
+    bool makingGap = false;
 
 
 public:

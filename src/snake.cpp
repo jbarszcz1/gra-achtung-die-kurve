@@ -63,17 +63,37 @@ void Snake::update() {
 
     if (IsKeyDown(turn_left_key)) {
         std::cout << "LEFT KEY" << turn_left_key << char(turn_left_key) << "  " << KEY_A << std::endl;
-        angle -= 5.0f; // Turn left
+        angle -= 3.0f; // Turn left
     }
     if (IsKeyDown(turn_right_key)) {
         std::cout << "RIGHT KEY" << std::endl;
-        angle += 5.0f; // Turn right
+        angle += 3.0f; // Turn right
     }
 
     // Move the snake in the direction of the current angle
     position.x += cosf(DEG2RAD * angle) * speed;
     position.y += sinf(DEG2RAD * angle) * speed;
 
-    trail.push_back(position);
+
+    // Generate random gaps in the trail
+    if (!makingGap && (std::rand() % 100) < 2)
+    {
+        makingGap = true;
+        gapCounter = 10 + (std::rand() % 4);
+    }
+
+    // Update the trail
+    if (makingGap)
+    {
+        gapCounter--;
+        if (gapCounter <= 0)
+        {
+            makingGap = false;
+        }
+    }
+    else
+    {
+        trail.push_back(position);
+    }
 
 }
