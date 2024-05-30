@@ -16,41 +16,46 @@ Snake::Snake(Color color, int turn_left_key, int turn_right_key)
     position = {static_cast<float>(std::rand() % 1300) + 100,
                static_cast<float>(std::rand() % 850) + 50};
 
-
-    std::cout << "INITIALISATION" << turn_left_key << " " << char(turn_left_key) << std::endl;
-    std::cout << "INITIALISATION" << turn_right_key << std::endl;
+    trail.push_back(position);
 }
 
 
 // GETTERS
 
-Color Snake::get_color() {
+Color Snake::get_color() const{
    return color;
 }
 
-unsigned Snake::get_angle() {
+unsigned Snake::get_angle() const{
     return angle;
 }
 
-Vector2 Snake::get_position() {
+Vector2 Snake::get_position() const{
    return position;
 }
 
-unsigned Snake::get_turn_right_key() {
+unsigned Snake::get_turn_right_key() const{
     return turn_right_key;
 }
 
-unsigned Snake::get_turn_left_key() {
+unsigned Snake::get_turn_left_key() const{
     return turn_left_key;
+}
+
+std::vector<Vector2> Snake::get_trail() const {
+    return trail;
 }
 
 
 // DRAW
 
 void Snake::draw() {
-    DrawCircleV(position, 10, color); // Draw the snake as a circle for simplicity
-}
+    for (const Vector2& point : trail) {
+        DrawCircleV(point, 3, color);
+    }
 
+    DrawCircleV(position, 3, color);
+}
 
 // MOVEMENT
 
@@ -68,5 +73,7 @@ void Snake::update() {
     // Move the snake in the direction of the current angle
     position.x += cosf(DEG2RAD * angle) * speed;
     position.y += sinf(DEG2RAD * angle) * speed;
+
+    trail.push_back(position);
 
 }
