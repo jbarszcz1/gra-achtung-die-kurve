@@ -161,6 +161,7 @@ void Board::display_window()
                     player.update();
                     player.draw();
                 }
+                check_collisions();
             } break;
 
             case SCORE:
@@ -175,4 +176,32 @@ void Board::display_window()
     }
 
     CloseWindow();
+}
+
+
+
+void Board::check_collisions() {
+    for (Snake& snake : Players) {
+        if (snake.check_collision_with_walls(1800, 1000)) {
+            std::cout << "Collision with wall detected for snake of color: " << std::endl;
+            reset_game();
+        }
+
+        if (snake.check_self_collision()) {
+            std::cout << "Collision with self detected for snake of color: " << std::endl;
+            reset_game();
+        }
+
+        if (snake.check_collision_with_others(Players)) {
+            std::cout << "Collision with another snake detected for snake of color: " << std::to_string(snake.get_turn_left_key())<< std::endl;
+            reset_game();
+        }
+    }
+}
+
+void Board::reset_game() {
+    // Reset all snakes to initial positions
+    for (Snake& snake : Players) {
+        snake.reset();
+    }
 }

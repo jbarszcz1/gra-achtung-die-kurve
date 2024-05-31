@@ -14,6 +14,14 @@ class Board
     public:
     Board(std::vector<Snake> Players);
     void display_window();
+
+    // Check players for all possible collisions
+    // Self collision is in Snake
+
+    void check_collisions();
+
+    void reset_game();
+
 };
 
 bool operator==(const Color& lhs, const Color& rhs);
