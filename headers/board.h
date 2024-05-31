@@ -7,13 +7,16 @@
 class Board
 {
     private:
-    float size_x=1800;
-    float size_y=1000;
+    // float size_x=1800;
+    // float size_y=1000;
+    // TEMPORARY for my screen
+    const float screen_width=1450;
+    const float screen_height=800;
     std::vector<Snake> Players;
 
     public:
     bool countdownActive = false;
-    int countdownValue = 5;
+    int countdownValue = 3;
     double countdownStartTime = 0;
 
     Board(std::vector<Snake> Players);
