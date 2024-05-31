@@ -86,6 +86,7 @@ void Snake::move() {
 }
 
 void Snake::update() {
+    if (!is_active) return;
 
     if (IsKeyDown(turn_left_key)) {
         angle -= 3.0f; // Turn left

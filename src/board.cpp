@@ -172,13 +172,9 @@ void Board::display_window()
 
                 if (countdownActive) {
                     if (countdownValue > 0) {
-                        std::string countdownText = "GAME STARTS IN " + std::to_string(countdownValue);
-                        int textWidth = MeasureText(countdownText.c_str(), 40);
-                        DrawText(countdownText.c_str(), screen_width / 2 - textWidth / 2, screen_height / 2, 40, RED);
+                        DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
                     } else {
-                        std::string goText = "GO!";
-                        int textWidth = MeasureText(goText.c_str(), 40);
-                        DrawText(goText.c_str(), screen_width / 2 - textWidth / 2, screen_height / 2, 40, RED);
+                        DrawText("GO!", screen_width / 2 - 50, screen_height / 2, 40, RED);
                     }
                     for (const Snake& player : Players) {
                         player.draw_initial_direction_arrow();
@@ -187,8 +183,9 @@ void Board::display_window()
                 } else {
                     for (Snake& player : Players)
                     {
+                        player.draw();
                         if (player.is_active) {
-                            player.draw();
+                            player.update();
                         }
                     }
                 }
