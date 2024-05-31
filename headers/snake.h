@@ -16,8 +16,9 @@ private:
 
     // Position and movement control
     Vector2 position;
+    int margin = 50;  // set margin to prevent spawn at the window borders
     float angle;
-    float speed = 2.5f;
+    float speed = 2.0f;
     std::vector<Vector2> trail;
 
     //Gap randomising

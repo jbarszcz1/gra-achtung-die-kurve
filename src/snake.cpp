@@ -16,8 +16,11 @@ Snake::Snake(Color color, int turn_left_key, int turn_right_key)
 void Snake::reset() {
     angle = static_cast<float>((std::rand() % 360) + 1);
 
-    position = {static_cast<float>(std::rand() % 1300) + 100,
-               static_cast<float>(std::rand() % 850) + 50};
+    position = {
+        static_cast<float>(std::rand() % (1300 - 2 * margin)) + margin,
+        static_cast<float>(std::rand() % (850 - 2 * margin)) + margin
+    };
+
 
     // Make sure all trails and gaps are cleared
     trail.clear();
@@ -168,13 +171,6 @@ void Snake::draw_initial_direction_arrow() const {
         arrowEnd.y + sinf(DEG2RAD * arrowAngle2) * 12
     };
 
-    // Debugging print statements to check the values
-    std::cout << "Drawing arrow at position: (" << position.x << ", " << position.y << ")" << std::endl;
-    std::cout << "Arrow end: (" << arrowEnd.x << ", " << arrowEnd.y << ")" << std::endl;
-    std::cout << "Arrow left: (" << arrowLeft.x << ", " << arrowLeft.y << ")" << std::endl;
-    std::cout << "Arrow right: (" << arrowRight.x << ", " << arrowRight.y << ")" << std::endl;
-
     // Draw the arrowhead
     DrawTriangle(arrowEnd, arrowRight, arrowLeft, color);
-    std::cout << "arrow is drawn" << std::endl;
 }
