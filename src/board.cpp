@@ -103,6 +103,7 @@ void Board::display_window()
                 if (IsKeyPressed(KEY_ENTER))
                 {
                     current_screen = GAMEPLAY;
+                    start_countdown();
                 }
             } break;
 
@@ -111,6 +112,16 @@ void Board::display_window()
                 if (IsKeyPressed(KEY_ENTER))
                 {
                     current_screen = SCORE;
+                }
+
+                if (countdownActive) {
+                    update_countdown();
+                } else {
+                    for (Snake& player : Players)
+                    {
+                        player.update();
+                    }
+                    check_collisions();
                 }
             } break;
 
@@ -155,13 +166,17 @@ void Board::display_window()
             case GAMEPLAY:
             {
                 DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
-                DrawText("PLAY...", 300, 300, 40, RED); //TODO: PLay for some time and then draw snakes
-                for (Snake& player : Players)
-                {
-                    player.update();
-                    player.draw();
+
+                if (countdownActive) {
+                    DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
                 }
-                check_collisions();
+                else {
+                    for (Snake& player : Players)
+                    {
+                        player.update();
+                        player.draw();
+                    }
+                }
             } break;
 
             case SCORE:
@@ -203,5 +218,25 @@ void Board::reset_game() {
     // Reset all snakes to initial positions
     for (Snake& snake : Players) {
         snake.reset();
+    }
+    start_countdown();
+}
+
+void Board::start_countdown() {
+    countdownActive = true;
+    countdownValue = 5; // Make sure the countdown value is correct
+    countdownStartTime = GetTime();
+}
+
+
+void Board::update_countdown() {
+    double currentTime = GetTime();
+    if (currentTime - countdownStartTime >= 1.0) {
+        countdownValue--;
+        countdownStartTime = currentTime;
+    }
+
+    if (countdownValue <= 0) {
+        countdownActive = false;
     }
 }
