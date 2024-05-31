@@ -144,3 +144,37 @@ bool Snake::check_collision_with_others(const std::vector<Snake>& snakes) const 
     return false;
 }
 
+void Snake::draw_initial_direction_arrow() const {
+    Vector2 arrowEnd = {
+        position.x + cosf(DEG2RAD * angle) * 20,
+        position.y + sinf(DEG2RAD * angle) * 20
+    };
+
+    Vector2 arrowLine = {
+        position.x + cosf(DEG2RAD * angle) * 10,
+        position.y + sinf(DEG2RAD * angle) * 10
+    };
+    DrawLineEx(position, arrowLine, 3, color);
+
+    // Calculate the points for the arrowhead
+    float arrowAngle1 = angle + 150;
+    float arrowAngle2 = angle - 150;
+    Vector2 arrowLeft = {
+        arrowEnd.x + cosf(DEG2RAD * arrowAngle1) * 12,
+        arrowEnd.y + sinf(DEG2RAD * arrowAngle1) * 12
+    };
+    Vector2 arrowRight = {
+        arrowEnd.x + cosf(DEG2RAD * arrowAngle2) * 12,
+        arrowEnd.y + sinf(DEG2RAD * arrowAngle2) * 12
+    };
+
+    // Debugging print statements to check the values
+    std::cout << "Drawing arrow at position: (" << position.x << ", " << position.y << ")" << std::endl;
+    std::cout << "Arrow end: (" << arrowEnd.x << ", " << arrowEnd.y << ")" << std::endl;
+    std::cout << "Arrow left: (" << arrowLeft.x << ", " << arrowLeft.y << ")" << std::endl;
+    std::cout << "Arrow right: (" << arrowRight.x << ", " << arrowRight.y << ")" << std::endl;
+
+    // Draw the arrowhead
+    DrawTriangle(arrowEnd, arrowRight, arrowLeft, color);
+    std::cout << "arrow is drawn" << std::endl;
+}

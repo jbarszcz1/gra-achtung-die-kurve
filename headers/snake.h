@@ -55,6 +55,9 @@ public:
     bool check_collision_with_walls(int screen_width, int screen_height) const;
     bool check_collision_with_others(const std::vector<Snake>& snakes) const;
 
+    // Countdown screen
+    void draw_initial_direction_arrow() const;
+
 };
 
 #endif //SNAKE_H
