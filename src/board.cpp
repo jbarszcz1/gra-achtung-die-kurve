@@ -172,9 +172,13 @@ void Board::display_window()
 
                 if (countdownActive) {
                     if (countdownValue > 0) {
-                        DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
+                        std::string countdownText = "GAME STARTS IN " + std::to_string(countdownValue);
+                        int textWidth = MeasureText(countdownText.c_str(), 40);
+                        DrawText(countdownText.c_str(), screen_width / 2 - textWidth / 2, screen_height / 2, 40, RED);
                     } else {
-                        DrawText("GO!", screen_width / 2 - 50, screen_height / 2, 40, RED);
+                        std::string goText = "GO!";
+                        int textWidth = MeasureText(goText.c_str(), 40);
+                        DrawText(goText.c_str(), screen_width / 2 - textWidth / 2, screen_height / 2, 40, RED);
                     }
                     for (const Snake& player : Players) {
                         player.draw_initial_direction_arrow();
@@ -195,8 +199,12 @@ void Board::display_window()
                 Color winnerColor;
                 std::string winnerColorStr;
                 std::tie(winnerColor, winnerColorStr) = get_winner_color();
-                DrawText(("The winner is: " + winnerColorStr).c_str(), screen_width / 2 - 150, screen_height / 2 - 20, 40, winnerColor);
-                DrawText("Press Enter to return to Title Screen", screen_width / 2 - 200, screen_height / 2 + 20, 20, winnerColor);
+                std::string winnerText = "The winner is: " + winnerColorStr;
+                int textWidth = MeasureText(winnerText.c_str(), 40);
+                DrawText(winnerText.c_str(), screen_width / 2 - textWidth / 2, screen_height / 2 - 20, 40, winnerColor);
+                std::string promptText = "Press Enter to return to Title Screen";
+                int promptWidth = MeasureText(promptText.c_str(), 20);
+                DrawText(promptText.c_str(), screen_width / 2 - promptWidth / 2, screen_height / 2 + 20, 20, winnerColor);
             } break;
 
             default: break;
