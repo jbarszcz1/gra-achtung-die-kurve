@@ -2,6 +2,7 @@
 #define BOARD_H
 #include "snake.h"
 #include <vector>
+#include <tuple>
 
 
 class Board
@@ -29,6 +30,10 @@ class Board
     // Countdown handling
     void start_countdown();
     void update_countdown();
+
+    // Game ending
+    bool check_game_over() const;
+    std::tuple<Color, std::string> get_winner_color() const;
 };
 
 

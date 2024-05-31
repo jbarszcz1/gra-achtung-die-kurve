@@ -92,7 +92,7 @@ void Board::display_window()
                                     [&button](Snake& snake) { return snake.get_color() == button.color; }),
                                     Players.end());
                                 // Add the new snake
-                                Players.emplace_back(button.color, (int)std::toupper(button.inputKeyLeft), (int)std::toupper(button.inputKeyRight));
+                                Players.emplace_back(button.color, (int)std::toupper(button.inputKeyLeft), (int)std::toupper(button.inputKeyRight), button.colorName);
                             }
                         }
                     }
@@ -117,9 +117,14 @@ void Board::display_window()
                 } else {
                     for (Snake& player : Players)
                     {
-                        player.update();
+                        if (player.is_active) {
+                            player.update();
+                        }
                     }
                     check_collisions();
+                    if (check_game_over()) {
+                        current_screen = SCORE;
+                    }
                 }
             } break;
 
@@ -167,7 +172,7 @@ void Board::display_window()
 
                 if (countdownActive) {
                     if (countdownValue > 0) {
-                        DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 190, screen_height / 2, 40, RED);
+                        DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
                     } else {
                         DrawText("GO!", screen_width / 2 - 50, screen_height / 2, 40, RED);
                     }
@@ -178,15 +183,20 @@ void Board::display_window()
                 } else {
                     for (Snake& player : Players)
                     {
-                        player.update();
-                        player.draw();
+                        if (player.is_active) {
+                            player.draw();
+                        }
                     }
                 }
             } break;
 
             case SCORE:
             {
-                DrawText("and the winner is", 300, 300, 20, RED);
+                Color winnerColor;
+                std::string winnerColorStr;
+                std::tie(winnerColor, winnerColorStr) = get_winner_color();
+                DrawText(("The winner is: " + winnerColorStr).c_str(), screen_width / 2 - 150, screen_height / 2 - 20, 40, winnerColor);
+                DrawText("Press Enter to return to Title Screen", screen_width / 2 - 200, screen_height / 2 + 20, 20, winnerColor);
             } break;
 
             default: break;
@@ -202,19 +212,14 @@ void Board::display_window()
 
 void Board::check_collisions() {
     for (Snake& snake : Players) {
+        if (!snake.is_active) continue;
+
         if (snake.check_collision_with_walls(screen_width, screen_height)) {
-            std::cout << "Collision with wall detected for snake of color: " << std::endl;
-            reset_game();
-        }
-
-        if (snake.check_self_collision()) {
-            std::cout << "Collision with self detected for snake of color: " << std::endl;
-            reset_game();
-        }
-
-        if (snake.check_collision_with_others(Players)) {
-            std::cout << "Collision with another snake detected for snake of color: " << std::to_string(snake.get_turn_left_key())<< std::endl;
-            reset_game();
+            snake.is_active = false;
+        } else if (snake.check_self_collision()) {
+            snake.is_active = false;
+        } else if (snake.check_collision_with_others(Players)) {
+            snake.is_active = false;
         }
     }
 }
@@ -244,4 +249,23 @@ void Board::update_countdown() {
     if (countdownValue <= 0) {
         countdownActive = false;
     }
+}
+
+bool Board::check_game_over() const {
+    int activeCount = 0;
+    for (const Snake& snake : Players) {
+        if (snake.is_active) {
+            activeCount++;
+        }
+    }
+    return activeCount <= 1;
+}
+
+std::tuple<Color, std::string> Board::get_winner_color() const {
+    for (const Snake& snake : Players) {
+        if (snake.is_active) {
+            return std::make_tuple(snake.get_color(), snake.get_color_str());
+        }
+    }
+    return std::make_tuple(BLACK, "BLACK");
 }

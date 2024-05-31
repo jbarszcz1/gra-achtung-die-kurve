@@ -11,6 +11,7 @@ class Snake
 private:
     // Control keys and color
     Color color;
+    std::string snakeColor;
     int turn_left_key;
     int turn_right_key;
 
@@ -28,11 +29,15 @@ private:
 
 public:
     // Initialisation and reset
-    Snake(Color color, int turn_left_key, int turn_right_key);
+    Snake(Color color, int turn_left_key, int turn_right_key, std::string Color);
     void reset();
+
+    bool is_active;
 
     // Getters
     Color get_color() const;
+
+    std::string get_color_str() const;
 
     unsigned get_turn_left_key() const;
 

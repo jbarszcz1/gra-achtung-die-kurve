@@ -6,8 +6,8 @@
 
 
 
-Snake::Snake(Color color, int turn_left_key, int turn_right_key)
-    : color(color), turn_left_key(turn_left_key), turn_right_key(turn_right_key)
+Snake::Snake(Color color, int turn_left_key, int turn_right_key, std::string snakeColor)
+    : color(color), turn_left_key(turn_left_key), turn_right_key(turn_right_key), snakeColor(snakeColor)
 {
     srand(time(NULL));
     reset();
@@ -29,6 +29,8 @@ void Snake::reset() {
     makingGap = false;
     gapCounter = 0;
 
+    is_active = true;
+
     // Initial movement to avoid infinite self-collision
     for (int i = 0; i < 21; ++i) {
             move();
@@ -38,9 +40,12 @@ void Snake::reset() {
 
 
 // GETTERS
-
 Color Snake::get_color() const{
-   return color;
+    return color;
+}
+
+std::string Snake::get_color_str() const{
+   return snakeColor;
 }
 
 unsigned Snake::get_angle() const{
