@@ -26,7 +26,9 @@ private:
 
 
 public:
+    // Initialisation and reset
     Snake(Color color, int turn_left_key, int turn_right_key);
+    void reset();
 
     // Getters
     Color get_color() const;
@@ -45,7 +47,13 @@ public:
     void draw();
 
     // Movement mechanics
+    void move();
     void update();
+
+    // Collision check
+    bool check_self_collision () const;
+    bool check_collision_with_walls(int screen_width, int screen_height) const;
+    bool check_collision_with_others(const std::vector<Snake>& snakes) const;
 
 };
 
