@@ -168,9 +168,16 @@ void Board::display_window()
                 DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
 
                 if (countdownActive) {
-                    DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
-                }
-                else {
+                    if (countdownValue > 0) {
+                        DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
+                    } else {
+                        DrawText("GO!", screen_width / 2 - 50, screen_height / 2, 40, RED);
+                    }
+                    for (const Snake& player : Players) {
+                        player.draw_initial_direction_arrow();
+                    }
+
+                } else {
                     for (Snake& player : Players)
                     {
                         player.update();
