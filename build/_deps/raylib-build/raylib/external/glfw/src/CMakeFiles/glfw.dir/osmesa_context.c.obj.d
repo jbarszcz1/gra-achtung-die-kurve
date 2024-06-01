@@ -1,5 +1,5 @@
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\osmesa_context.c \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\osmesa_context.c \
  C:/msys64/ucrt64/include/stdlib.h C:/msys64/ucrt64/include/corecrt.h \
  C:/msys64/ucrt64/include/_mingw.h C:/msys64/ucrt64/include/_mingw_mac.h \
  C:/msys64/ucrt64/include/_mingw_secapi.h \
@@ -15,15 +15,15 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/string.h \
  C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/msys64/ucrt64/include/assert.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\internal.h \
- C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\internal.h \
+ C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-src/src/external/glfw/include/GLFW/glfw3.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
  C:/msys64/ucrt64/include/stddef.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
  C:/msys64/ucrt64/include/stdint.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\platform.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\null_platform.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_platform.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\platform.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\null_platform.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_platform.h \
  C:/msys64/ucrt64/include/wctype.h C:/msys64/ucrt64/include/windows.h \
  C:/msys64/ucrt64/include/sdkddkver.h C:/msys64/ucrt64/include/excpt.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h \
@@ -199,7 +199,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c
  C:/msys64/ucrt64/include/propidl.h \
  C:/msys64/ucrt64/include/_mingw_dxhelper.h \
  C:/msys64/ucrt64/include/xinput.h C:/msys64/ucrt64/include/dbt.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\null_joystick.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_joystick.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_thread.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_time.h
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\null_joystick.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_joystick.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_thread.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external\glfw\src\win32_time.h

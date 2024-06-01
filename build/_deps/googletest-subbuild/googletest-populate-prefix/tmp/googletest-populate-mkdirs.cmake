@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-src"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-src"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-build"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

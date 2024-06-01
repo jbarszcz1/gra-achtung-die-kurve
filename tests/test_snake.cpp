@@ -12,10 +12,15 @@
 
 //     EXPECT_GE(snake.get_angle(), 1);
 //     EXPECT_LE(snake.get_angle(), 360);
+//     EXPECT_GE(snake.get_angle(), 1);
+//     EXPECT_LE(snake.get_angle(), 360);
 
 //     EXPECT_GE(snake.get_position().x, 100);
 //     EXPECT_LE(snake.get_position().x, 1400);
 
+//     EXPECT_GE(snake.get_coord_y(), 50);
+//     EXPECT_LE(snake.get_coord_y(), 900);
+// }
 //     EXPECT_GE(snake.get_coord_y(), 50);
 //     EXPECT_LE(snake.get_coord_y(), 900);
 // }

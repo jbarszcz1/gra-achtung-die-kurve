@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jakub/PROI/gra_achtung_die_kurve
+# Install script for directory: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-build/cmake_install.cmake")
+  include("C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-build/cmake_install.cmake")
+  include("C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

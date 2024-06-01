@@ -1,6 +1,6 @@
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\rtext.c \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\raylib.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\rtext.c \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\raylib.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
  C:/msys64/ucrt64/include/_mingw_stdarg.h \
@@ -9,9 +9,9 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: \
  C:/msys64/ucrt64/include/_mingw_secapi.h \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdbool.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\config.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\utils.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\rlgl.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\config.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\utils.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\rlgl.h \
  C:/msys64/ucrt64/include/stdlib.h C:/msys64/ucrt64/include/corecrt.h \
  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
@@ -28,7 +28,7 @@ _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj: \
  C:/msys64/ucrt64/include/string.h \
  C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/msys64/ucrt64/include/ctype.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external/stb_rect_pack.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external/stb_rect_pack.h \
  C:/msys64/ucrt64/include/assert.h \
- C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-src\src\external/stb_truetype.h \
+ C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-src\src\external/stb_truetype.h \
  C:/msys64/ucrt64/include/math.h

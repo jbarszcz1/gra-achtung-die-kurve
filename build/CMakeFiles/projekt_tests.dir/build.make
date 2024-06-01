@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve
+CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve\build
+CMAKE_BINARY_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/projekt_tests.dir/depend.make
@@ -70,33 +70,33 @@ include CMakeFiles/projekt_tests.dir/flags.make
 
 CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj: CMakeFiles/projekt_tests.dir/flags.make
 CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj: CMakeFiles/projekt_tests.dir/includes_CXX.rsp
-CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj: C:/Users/jakub/PROI/gra_achtung_die_kurve/tests/test_snake.cpp
+CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/tests/test_snake.cpp
 CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj: CMakeFiles/projekt_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj -MF CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.obj.d -o CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.obj -c C:\Users\jakub\PROI\gra_achtung_die_kurve\tests\test_snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj -MF CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.obj.d -o CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\tests\test_snake.cpp
 
 CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\gra_achtung_die_kurve\tests\test_snake.cpp > CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\tests\test_snake.cpp > CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.i
 
 CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\gra_achtung_die_kurve\tests\test_snake.cpp -o CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\tests\test_snake.cpp -o CMakeFiles\projekt_tests.dir\tests\test_snake.cpp.s
 
 CMakeFiles/projekt_tests.dir/src/snake.cpp.obj: CMakeFiles/projekt_tests.dir/flags.make
 CMakeFiles/projekt_tests.dir/src/snake.cpp.obj: CMakeFiles/projekt_tests.dir/includes_CXX.rsp
-CMakeFiles/projekt_tests.dir/src/snake.cpp.obj: C:/Users/jakub/PROI/gra_achtung_die_kurve/src/snake.cpp
+CMakeFiles/projekt_tests.dir/src/snake.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/snake.cpp
 CMakeFiles/projekt_tests.dir/src/snake.cpp.obj: CMakeFiles/projekt_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt_tests.dir/src/snake.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt_tests.dir/src/snake.cpp.obj -MF CMakeFiles\projekt_tests.dir\src\snake.cpp.obj.d -o CMakeFiles\projekt_tests.dir\src\snake.cpp.obj -c C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt_tests.dir/src/snake.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt_tests.dir/src/snake.cpp.obj -MF CMakeFiles\projekt_tests.dir\src\snake.cpp.obj.d -o CMakeFiles\projekt_tests.dir\src\snake.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp
 
 CMakeFiles/projekt_tests.dir/src/snake.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt_tests.dir/src/snake.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp > CMakeFiles\projekt_tests.dir\src\snake.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp > CMakeFiles\projekt_tests.dir\src\snake.cpp.i
 
 CMakeFiles/projekt_tests.dir/src/snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt_tests.dir/src/snake.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp -o CMakeFiles\projekt_tests.dir\src\snake.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp -o CMakeFiles\projekt_tests.dir\src\snake.cpp.s
 
 # Object files for target projekt_tests
 projekt_tests_OBJECTS = \
@@ -111,11 +111,13 @@ projekt_tests.exe: CMakeFiles/projekt_tests.dir/src/snake.cpp.obj
 projekt_tests.exe: CMakeFiles/projekt_tests.dir/build.make
 projekt_tests.exe: lib/libgtest.a
 projekt_tests.exe: lib/libgtest_main.a
+projekt_tests.exe: _deps/raylib-build/raylib/libraylib.a
 projekt_tests.exe: lib/libgtest.a
+projekt_tests.exe: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 projekt_tests.exe: CMakeFiles/projekt_tests.dir/linkLibs.rsp
 projekt_tests.exe: CMakeFiles/projekt_tests.dir/objects1.rsp
 projekt_tests.exe: CMakeFiles/projekt_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable projekt_tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable projekt_tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\projekt_tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +129,6 @@ CMakeFiles/projekt_tests.dir/clean:
 .PHONY : CMakeFiles/projekt_tests.dir/clean
 
 CMakeFiles/projekt_tests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jakub\PROI\gra_achtung_die_kurve C:\Users\jakub\PROI\gra_achtung_die_kurve C:\Users\jakub\PROI\gra_achtung_die_kurve\build C:\Users\jakub\PROI\gra_achtung_die_kurve\build C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles\projekt_tests.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles\projekt_tests.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/projekt_tests.dir/depend
 

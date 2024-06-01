@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src
+# Install script for directory: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-build/raylib/cmake_install.cmake")
+  include("C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-build/raylib/cmake_install.cmake")
 
 endif()
 
