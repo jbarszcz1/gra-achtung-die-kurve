@@ -126,32 +126,23 @@ void Board::display_window()
                     }
                 }
 
-                if (IsKeyPressed(KEY_ENTER))
-                {
+                if (IsKeyPressed(KEY_ENTER)) {
                     // Count the number of players with both left and right keys assigned
                     int activePlayers = 0;
-                    for (const auto& button : buttons)
-                    {
-                        if (button.drawKeyLeft && button.drawKeyRight)
-                        {
+                    for (const auto& button : buttons) {
+                        if (button.drawKeyLeft && button.drawKeyRight) {
                             activePlayers++;
                         }
                     }
 
-                    if (activePlayers >= 2)
-                    {
+                    if (activePlayers >= 2) {
                         current_screen = GAMEPLAY;
                         start_countdown();
-                    }
-                    else
-                    {
+                    } else {
                         insufficientPlayersMessageTime = GetTime();
                         insufficientPlayersMessageActive = true;
                     }
                 }
-
-
-
             } break;
 
             case GAMEPLAY:
@@ -191,8 +182,10 @@ void Board::display_window()
                 {
                 for (auto& button : buttons)
                 {
-                    button.inputKeyLeft = '\n';
-                    button.inputKeyRight = '\n';
+                    button.inputKeyLeft = '\0';
+                    button.inputKeyRight = '\0';
+                    button.drawKeyLeft = false;
+                    button.drawKeyRight = false;
                 }
 
                     current_screen = TITLE;
@@ -244,15 +237,14 @@ void Board::display_window()
                 DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
 
                 if (countdownActive) {
+                    for (const Snake& player : Players) {
+                        player.draw_initial_direction_arrow();
+                    }
                     if (countdownValue > 0) {
                         DrawText(("GAME STARTS IN " + std::to_string(countdownValue)).c_str(), screen_width / 2 - 150, screen_height / 2, 40, RED);
                     } else {
                         DrawText("GO!", screen_width / 2 - 50, screen_height / 2, 40, RED);
                     }
-                    for (const Snake& player : Players) {
-                        player.draw_initial_direction_arrow();
-                    }
-
                 } else {
                     for (Snake& player : Players)
                     {
