@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/src/snake.cpp" "CMakeFiles/projekt_tests.dir/src/snake.cpp.obj" "gcc" "CMakeFiles/projekt_tests.dir/src/snake.cpp.obj.d"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/tests/test_snake.cpp" "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj" "gcc" "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj.d"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/snake.cpp" "CMakeFiles/projekt_tests.dir/src/snake.cpp.obj" "gcc" "CMakeFiles/projekt_tests.dir/src/snake.cpp.obj.d"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/tests/test_snake.cpp" "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj" "gcc" "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

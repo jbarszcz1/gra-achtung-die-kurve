@@ -3,6 +3,10 @@
 #include "raylib.h"
 #include <vector>
 #include <string>
+#include <cmath>
+#include <algorithm>
+
+
 
 struct ButtonData {
     Rectangle bounds;

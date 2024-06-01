@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild
+# Install script for directory: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

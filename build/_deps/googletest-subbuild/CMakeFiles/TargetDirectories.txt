@@ -1,3 +1,3 @@
-C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
-C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
-C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
+C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir

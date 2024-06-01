@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION 3.5)
 
 # Make file names absolute:
 #
-get_filename_component(filename "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-subbuild/raylib-populate-prefix/src/4.5.0.tar.gz" ABSOLUTE)
-get_filename_component(directory "C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src" ABSOLUTE)
+get_filename_component(filename "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-subbuild/raylib-populate-prefix/src/4.5.0.tar.gz" ABSOLUTE)
+get_filename_component(directory "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

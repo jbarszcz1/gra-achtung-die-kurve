@@ -34,8 +34,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FetchContent.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in"
-  "C:/Program Files/CMake/share/cmake-3.29/Modules/FetchContent/package-config-version.cmake.in"
-  "C:/Program Files/CMake/share/cmake-3.29/Modules/FetchContent/package-config.cmake.in"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FindGit.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FindOpenGL.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
@@ -58,7 +56,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Templates/CPackConfig.cmake.in"
-  "C:/Users/jakub/PROI/gra_achtung_die_kurve/CMakeLists.txt"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/CMakeLists.txt"
   "CMakeFiles/3.29.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.0/CMakeRCCompiler.cmake"
@@ -104,8 +102,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "_deps/raylib-subbuild/CMakeLists.txt"
-  "CMakeFiles/pkgRedirects/raylib-config.cmake"
-  "CMakeFiles/pkgRedirects/raylib-config-version.cmake"
   "_deps/googletest-subbuild/CMakeLists.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/raylib-build/CMakeFiles/CMakeDirectoryInformation.cmake"

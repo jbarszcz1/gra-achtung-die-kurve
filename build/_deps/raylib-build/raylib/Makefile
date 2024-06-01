@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve
+CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve\build
+CMAKE_BINARY_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve\build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/jakub/PROI/gra_achtung_die_kurve/build/CPackSourceConfig.cmake
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && "C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -161,14 +161,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles C:\Users\jakub\PROI\gra_achtung_die_kurve\build\_deps\raylib-build\raylib\\CMakeFiles\progress.marks
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles 0
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\_deps\raylib-build\raylib\\CMakeFiles\progress.marks
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/clean
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/clean
 .PHONY : clean
 
 # The main clean target
@@ -177,22 +177,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/preinstall
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/preinstall
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ raylib: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rule
 
 # fast build rule for target.
 raylib/fast:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
 .PHONY : raylib/fast
 
 raudio.obj: raudio.c.obj
@@ -209,7 +209,7 @@ raudio.obj: raudio.c.obj
 
 # target to build an object file
 raudio.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.obj
 .PHONY : raudio.c.obj
 
 raudio.i: raudio.c.i
@@ -217,7 +217,7 @@ raudio.i: raudio.c.i
 
 # target to preprocess a source file
 raudio.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.i
 .PHONY : raudio.c.i
 
 raudio.s: raudio.c.s
@@ -225,7 +225,7 @@ raudio.s: raudio.c.s
 
 # target to generate assembly for a file
 raudio.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.s
 .PHONY : raudio.c.s
 
 rcore.obj: rcore.c.obj
@@ -233,7 +233,7 @@ rcore.obj: rcore.c.obj
 
 # target to build an object file
 rcore.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.obj
 .PHONY : rcore.c.obj
 
 rcore.i: rcore.c.i
@@ -241,7 +241,7 @@ rcore.i: rcore.c.i
 
 # target to preprocess a source file
 rcore.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.i
 .PHONY : rcore.c.i
 
 rcore.s: rcore.c.s
@@ -249,7 +249,7 @@ rcore.s: rcore.c.s
 
 # target to generate assembly for a file
 rcore.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.s
 .PHONY : rcore.c.s
 
 rmodels.obj: rmodels.c.obj
@@ -257,7 +257,7 @@ rmodels.obj: rmodels.c.obj
 
 # target to build an object file
 rmodels.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.obj
 .PHONY : rmodels.c.obj
 
 rmodels.i: rmodels.c.i
@@ -265,7 +265,7 @@ rmodels.i: rmodels.c.i
 
 # target to preprocess a source file
 rmodels.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.i
 .PHONY : rmodels.c.i
 
 rmodels.s: rmodels.c.s
@@ -273,7 +273,7 @@ rmodels.s: rmodels.c.s
 
 # target to generate assembly for a file
 rmodels.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.s
 .PHONY : rmodels.c.s
 
 rshapes.obj: rshapes.c.obj
@@ -281,7 +281,7 @@ rshapes.obj: rshapes.c.obj
 
 # target to build an object file
 rshapes.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.obj
 .PHONY : rshapes.c.obj
 
 rshapes.i: rshapes.c.i
@@ -289,7 +289,7 @@ rshapes.i: rshapes.c.i
 
 # target to preprocess a source file
 rshapes.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.i
 .PHONY : rshapes.c.i
 
 rshapes.s: rshapes.c.s
@@ -297,7 +297,7 @@ rshapes.s: rshapes.c.s
 
 # target to generate assembly for a file
 rshapes.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.s
 .PHONY : rshapes.c.s
 
 rtext.obj: rtext.c.obj
@@ -305,7 +305,7 @@ rtext.obj: rtext.c.obj
 
 # target to build an object file
 rtext.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.obj
 .PHONY : rtext.c.obj
 
 rtext.i: rtext.c.i
@@ -313,7 +313,7 @@ rtext.i: rtext.c.i
 
 # target to preprocess a source file
 rtext.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.i
 .PHONY : rtext.c.i
 
 rtext.s: rtext.c.s
@@ -321,7 +321,7 @@ rtext.s: rtext.c.s
 
 # target to generate assembly for a file
 rtext.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.s
 .PHONY : rtext.c.s
 
 rtextures.obj: rtextures.c.obj
@@ -329,7 +329,7 @@ rtextures.obj: rtextures.c.obj
 
 # target to build an object file
 rtextures.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.obj
 .PHONY : rtextures.c.obj
 
 rtextures.i: rtextures.c.i
@@ -337,7 +337,7 @@ rtextures.i: rtextures.c.i
 
 # target to preprocess a source file
 rtextures.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.i
 .PHONY : rtextures.c.i
 
 rtextures.s: rtextures.c.s
@@ -345,7 +345,7 @@ rtextures.s: rtextures.c.s
 
 # target to generate assembly for a file
 rtextures.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.s
 .PHONY : rtextures.c.s
 
 utils.obj: utils.c.obj
@@ -353,7 +353,7 @@ utils.obj: utils.c.obj
 
 # target to build an object file
 utils.c.obj:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.obj
 .PHONY : utils.c.obj
 
 utils.i: utils.c.i
@@ -361,7 +361,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.i
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -369,7 +369,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.s
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -420,6 +420,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\jakub\PROI\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

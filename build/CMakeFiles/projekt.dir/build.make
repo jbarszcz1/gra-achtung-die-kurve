@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve
+CMAKE_SOURCE_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\jakub\PROI\gra_achtung_die_kurve\build
+CMAKE_BINARY_DIR = C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/projekt.dir/depend.make
@@ -70,48 +70,48 @@ include CMakeFiles/projekt.dir/flags.make
 
 CMakeFiles/projekt.dir/main.cpp.obj: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/main.cpp.obj: CMakeFiles/projekt.dir/includes_CXX.rsp
-CMakeFiles/projekt.dir/main.cpp.obj: C:/Users/jakub/PROI/gra_achtung_die_kurve/main.cpp
+CMakeFiles/projekt.dir/main.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/main.cpp
 CMakeFiles/projekt.dir/main.cpp.obj: CMakeFiles/projekt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt.dir/main.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/main.cpp.obj -MF CMakeFiles\projekt.dir\main.cpp.obj.d -o CMakeFiles\projekt.dir\main.cpp.obj -c C:\Users\jakub\PROI\gra_achtung_die_kurve\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekt.dir/main.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/main.cpp.obj -MF CMakeFiles\projekt.dir\main.cpp.obj.d -o CMakeFiles\projekt.dir\main.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\main.cpp
 
 CMakeFiles/projekt.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt.dir/main.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\gra_achtung_die_kurve\main.cpp > CMakeFiles\projekt.dir\main.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\main.cpp > CMakeFiles\projekt.dir\main.cpp.i
 
 CMakeFiles/projekt.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/main.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\gra_achtung_die_kurve\main.cpp -o CMakeFiles\projekt.dir\main.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\main.cpp -o CMakeFiles\projekt.dir\main.cpp.s
 
 CMakeFiles/projekt.dir/src/board.cpp.obj: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/src/board.cpp.obj: CMakeFiles/projekt.dir/includes_CXX.rsp
-CMakeFiles/projekt.dir/src/board.cpp.obj: C:/Users/jakub/PROI/gra_achtung_die_kurve/src/board.cpp
+CMakeFiles/projekt.dir/src/board.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/board.cpp
 CMakeFiles/projekt.dir/src/board.cpp.obj: CMakeFiles/projekt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt.dir/src/board.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/board.cpp.obj -MF CMakeFiles\projekt.dir\src\board.cpp.obj.d -o CMakeFiles\projekt.dir\src\board.cpp.obj -c C:\Users\jakub\PROI\gra_achtung_die_kurve\src\board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projekt.dir/src/board.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/board.cpp.obj -MF CMakeFiles\projekt.dir\src\board.cpp.obj.d -o CMakeFiles\projekt.dir\src\board.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\board.cpp
 
 CMakeFiles/projekt.dir/src/board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt.dir/src/board.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\gra_achtung_die_kurve\src\board.cpp > CMakeFiles\projekt.dir\src\board.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\board.cpp > CMakeFiles\projekt.dir\src\board.cpp.i
 
 CMakeFiles/projekt.dir/src/board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/src/board.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\gra_achtung_die_kurve\src\board.cpp -o CMakeFiles\projekt.dir\src\board.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\board.cpp -o CMakeFiles\projekt.dir\src\board.cpp.s
 
 CMakeFiles/projekt.dir/src/snake.cpp.obj: CMakeFiles/projekt.dir/flags.make
 CMakeFiles/projekt.dir/src/snake.cpp.obj: CMakeFiles/projekt.dir/includes_CXX.rsp
-CMakeFiles/projekt.dir/src/snake.cpp.obj: C:/Users/jakub/PROI/gra_achtung_die_kurve/src/snake.cpp
+CMakeFiles/projekt.dir/src/snake.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/snake.cpp
 CMakeFiles/projekt.dir/src/snake.cpp.obj: CMakeFiles/projekt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt.dir/src/snake.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/snake.cpp.obj -MF CMakeFiles\projekt.dir\src\snake.cpp.obj.d -o CMakeFiles\projekt.dir\src\snake.cpp.obj -c C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/projekt.dir/src/snake.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/snake.cpp.obj -MF CMakeFiles\projekt.dir\src\snake.cpp.obj.d -o CMakeFiles\projekt.dir\src\snake.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp
 
 CMakeFiles/projekt.dir/src/snake.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt.dir/src/snake.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp > CMakeFiles\projekt.dir\src\snake.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp > CMakeFiles\projekt.dir\src\snake.cpp.i
 
 CMakeFiles/projekt.dir/src/snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/src/snake.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\gra_achtung_die_kurve\src\snake.cpp -o CMakeFiles\projekt.dir\src\snake.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp -o CMakeFiles\projekt.dir\src\snake.cpp.s
 
 # Object files for target projekt
 projekt_OBJECTS = \
@@ -131,7 +131,7 @@ projekt.exe: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 projekt.exe: CMakeFiles/projekt.dir/linkLibs.rsp
 projekt.exe: CMakeFiles/projekt.dir/objects1.rsp
 projekt.exe: CMakeFiles/projekt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable projekt.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable projekt.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\projekt.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/projekt.dir/clean:
 .PHONY : CMakeFiles/projekt.dir/clean
 
 CMakeFiles/projekt.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jakub\PROI\gra_achtung_die_kurve C:\Users\jakub\PROI\gra_achtung_die_kurve C:\Users\jakub\PROI\gra_achtung_die_kurve\build C:\Users\jakub\PROI\gra_achtung_die_kurve\build C:\Users\jakub\PROI\gra_achtung_die_kurve\build\CMakeFiles\projekt.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles\projekt.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/projekt.dir/depend
 

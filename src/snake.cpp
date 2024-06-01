@@ -3,6 +3,9 @@
 #include <ctime>
 #include "snake.h"
 #include "board.h"
+#include <cmath>
+#include <algorithm>
+
 
 
 

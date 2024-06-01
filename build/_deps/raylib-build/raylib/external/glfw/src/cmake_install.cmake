@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/jakub/PROI/gra_achtung_die_kurve/build/_deps/raylib-src/src/external/glfw/src
+# Install script for directory: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build/_deps/raylib-src/src/external/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
