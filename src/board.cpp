@@ -100,9 +100,30 @@ void Board::display_window()
 
                 if (IsKeyPressed(KEY_ENTER))
                 {
-                    current_screen = GAMEPLAY;
-                    start_countdown();
+                    // Count the number of players with both left and right keys assigned
+                    int activePlayers = 0;
+                    for (const auto& button : buttons)
+                    {
+                        if (button.drawKeyLeft && button.drawKeyRight)
+                        {
+                            activePlayers++;
+                        }
+                    }
+
+                    if (activePlayers >= 2)
+                    {
+                        current_screen = GAMEPLAY;
+                        start_countdown();
+                    }
+                    else
+                    {
+                        insufficientPlayersMessageTime = GetTime();
+                        insufficientPlayersMessageActive = true;
+                    }
                 }
+
+
+
             } break;
 
              case GAMEPLAY:
@@ -170,6 +191,15 @@ void Board::display_window()
                         DrawText(std::string(1, button.inputKeyLeft).c_str(), screen_width / 2 - 100, button.bounds.y, 50, WHITE);
                     if (button.drawKeyRight)
                         DrawText(std::string(1, button.inputKeyRight).c_str(), screen_width / 2 + 350, button.bounds.y, 50, WHITE);
+                }
+
+                if (insufficientPlayersMessageActive && (GetTime() - insufficientPlayersMessageTime < 2.0))
+                {
+                    DrawText("Choose at least 2 players", screen_width / 2 - MeasureText("Choose at least 2 players", 20) / 2, screen_height - 50, 20, RED);
+                }
+                else
+                {
+                    insufficientPlayersMessageActive = false;
                 }
             } break;
 

@@ -21,6 +21,10 @@ class Board
     double gameOverStartTime = 0;
     const int gameOverDuration = 2;
 
+    // Player control
+    double insufficientPlayersMessageTime = 0;
+    bool insufficientPlayersMessageActive = false;
+
     public:
     GameScreen current_screen = TITLE;
     bool countdownActive = false;
