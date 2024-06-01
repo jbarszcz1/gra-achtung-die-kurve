@@ -16,7 +16,8 @@ class Board
     const float screen_height=800;
     std::vector<Snake> Players;
 
-    // Game over
+    // Game state
+    bool gameInProgress = false;
     bool gameOver = false;
     double gameOverStartTime = 0;
     const int gameOverDuration = 2;

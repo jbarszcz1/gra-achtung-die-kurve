@@ -126,11 +126,12 @@ void Board::display_window()
 
             } break;
 
-             case GAMEPLAY:
+            case GAMEPLAY:
             {
-                if (IsKeyPressed(KEY_ENTER))
+                if (IsKeyPressed(KEY_ENTER) && gameOver)
                 {
                     current_screen = SCORE;
+                    gameInProgress = false; // Game is no longer in progress
                 }
 
                 if (countdownActive) {
@@ -139,6 +140,7 @@ void Board::display_window()
                     // Display the trails and "GAME OVER" text for some time before switching to the SCORE screen
                     if (GetTime() - gameOverStartTime >= gameOverDuration) {
                         current_screen = SCORE;
+                        gameInProgress = false; // Game is no longer in progress
                     }
                 } else {
                     for (Snake& player : Players)
