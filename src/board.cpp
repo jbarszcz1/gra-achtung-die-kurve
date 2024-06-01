@@ -114,6 +114,11 @@ void Board::display_window()
 
                 if (countdownActive) {
                     update_countdown();
+                } else if (gameOver) {
+                    // Display the trails for some time before switching to the SCORE screen
+                    if (GetTime() - gameOverStartTime >= gameOverDuration) {
+                        current_screen = SCORE;
+                    }
                 } else {
                     for (Snake& player : Players)
                     {
@@ -123,7 +128,8 @@ void Board::display_window()
                     }
                     check_collisions();
                     if (check_game_over()) {
-                        current_screen = SCORE;
+                        gameOver = true;
+                        gameOverStartTime = GetTime();
                     }
                 }
             } break;

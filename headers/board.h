@@ -4,6 +4,7 @@
 #include <vector>
 #include <tuple>
 
+typedef enum GameScreen { TITLE=0, GAMEPLAY, SCORE } GameScreen;
 
 class Board
 {
@@ -15,7 +16,13 @@ class Board
     const float screen_height=800;
     std::vector<Snake> Players;
 
+    // Game over
+    bool gameOver = false;
+    double gameOverStartTime = 0;
+    const int gameOverDuration = 3;
+
     public:
+    GameScreen current_screen = TITLE;
     bool countdownActive = false;
     int countdownValue = 3;
     double countdownStartTime = 0;
