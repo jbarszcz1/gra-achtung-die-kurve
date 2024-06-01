@@ -105,7 +105,7 @@ void Board::display_window()
                 }
             } break;
 
-            case GAMEPLAY:
+             case GAMEPLAY:
             {
                 if (IsKeyPressed(KEY_ENTER))
                 {
@@ -115,7 +115,7 @@ void Board::display_window()
                 if (countdownActive) {
                     update_countdown();
                 } else if (gameOver) {
-                    // Display the trails for some time before switching to the SCORE screen
+                    // Display the trails and "GAME OVER" text for some time before switching to the SCORE screen
                     if (GetTime() - gameOverStartTime >= gameOverDuration) {
                         current_screen = SCORE;
                     }
@@ -139,6 +139,7 @@ void Board::display_window()
                 if (IsKeyPressed(KEY_ENTER))
                 {
                     current_screen = TITLE;
+                    reset_game();
                 }
             } break;
 
@@ -190,9 +191,9 @@ void Board::display_window()
                     for (Snake& player : Players)
                     {
                         player.draw();
-                        if (player.is_active) {
-                            player.update();
-                        }
+                    }
+                    if (gameOver) {
+                        DrawText("GAME OVER", screen_width / 2 - MeasureText("GAME OVER", 60) / 2, screen_height / 2 - 30, 60, RED);
                     }
                 }
             } break;
