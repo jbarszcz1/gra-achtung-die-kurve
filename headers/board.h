@@ -19,7 +19,7 @@ class Board
     // Game over
     bool gameOver = false;
     double gameOverStartTime = 0;
-    const int gameOverDuration = 3;
+    const int gameOverDuration = 2;
 
     public:
     GameScreen current_screen = TITLE;

@@ -242,6 +242,9 @@ void Board::reset_game() {
         snake.reset();
     }
     start_countdown();
+    //TODO: refactor!!!!! (can the object be reinitialised to stick to dry?)
+    gameOver = false;
+    gameOverStartTime = 0;
 }
 
 void Board::start_countdown() {
