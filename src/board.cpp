@@ -160,9 +160,16 @@ void Board::display_window()
             {
                 if (IsKeyPressed(KEY_ENTER))
                 {
-                    current_screen = TITLE;
+                for (auto& button : buttons)
+                {
+                    button.inputKeyLeft = '\n';
+                    button.inputKeyRight = '\n';
                 }
-            } break;
+
+                    current_screen = TITLE;
+
+            }
+            }break;
 
             default: break;
         }
