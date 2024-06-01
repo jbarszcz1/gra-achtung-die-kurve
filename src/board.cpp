@@ -35,6 +35,7 @@ void Board::display_window()
     InitWindow(screen_width, screen_height, "Achtung die Kurve!");
 
     GameScreen current_screen = TITLE;
+
     SetTargetFPS(60);
 
     std::vector<ButtonData> buttons = {
@@ -299,6 +300,7 @@ void Board::reset_game() {
     for (Snake& snake : Players) {
         snake.reset();
     }
+    Players.clear();
     start_countdown();
     //TODO: refactor!!!!! (can the object be reinitialised to stick to dry?)
     gameOver = false;
