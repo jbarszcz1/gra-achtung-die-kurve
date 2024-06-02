@@ -29,7 +29,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-set(SOURCE_FILES main.cpp src/board.cpp src/snake.cpp)
+set(SOURCE_FILES main.cpp src/board.cpp src/snake.cpp src/game.cpp src/game_state.cpp)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/headers)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
@@ -43,15 +43,12 @@ set(TEST_FILES tests/test_snake.cpp)
 
 include_directories(tests)
 
-<<<<<<< HEAD
 
 # set(TEST_FILES
 #     tests/test_snake.cpp
 # )
-=======
 # Dodanie pliku wykonywalnego testów
 add_executable(${PROJECT_NAME}_tests ${TEST_FILES} src/snake.cpp)
->>>>>>> origin/editing_buttons
 
 # Linkowanie bibliotek do pliku wykonywalnego testów
 target_link_libraries(${PROJECT_NAME}_tests gtest gtest_main raylib m)
