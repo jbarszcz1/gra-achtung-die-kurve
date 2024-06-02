@@ -4,6 +4,7 @@
 #include "raylib.h"
 #include <string>
 
+// Structure to process buttons on the Title screen
 struct ButtonData {
     Rectangle bounds;
     bool clicked;

@@ -1,17 +1,23 @@
 #include "game.h"
 #include "raylib.h"
 
+
 Game::Game() : board(state) {}  // Pass state to board
 
 void Game::run() {
+    // Set the game window
     InitWindow(board.get_screen_width(), board.get_screen_height(), "Achtung die Kurve!");
 
     SetTargetFPS(60);
 
+
+    // Main game loop
     while (!WindowShouldClose()) {
+        // Current mouse position
         Vector2 mousePoint = GetMousePosition();
 
-        switch (state.current_screen) {
+        // Handle different game states
+        switch (state.currentScreen) {
             case TITLE:
                 board.handle_title_screen(mousePoint);
                 break;
@@ -23,11 +29,14 @@ void Game::run() {
                 break;
         }
 
+
+        // Rendering
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
 
-        switch (state.current_screen) {
+        // Current screen rendering
+        switch (state.currentScreen) {
             case TITLE:
                 board.draw_title_screen();
                 break;
