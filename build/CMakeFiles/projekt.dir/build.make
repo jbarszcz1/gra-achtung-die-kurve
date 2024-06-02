@@ -113,11 +113,43 @@ CMakeFiles/projekt.dir/src/snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/src/snake.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\snake.cpp -o CMakeFiles\projekt.dir\src\snake.cpp.s
 
+CMakeFiles/projekt.dir/src/game.cpp.obj: CMakeFiles/projekt.dir/flags.make
+CMakeFiles/projekt.dir/src/game.cpp.obj: CMakeFiles/projekt.dir/includes_CXX.rsp
+CMakeFiles/projekt.dir/src/game.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game.cpp
+CMakeFiles/projekt.dir/src/game.cpp.obj: CMakeFiles/projekt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/projekt.dir/src/game.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/game.cpp.obj -MF CMakeFiles\projekt.dir\src\game.cpp.obj.d -o CMakeFiles\projekt.dir\src\game.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game.cpp
+
+CMakeFiles/projekt.dir/src/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt.dir/src/game.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game.cpp > CMakeFiles\projekt.dir\src\game.cpp.i
+
+CMakeFiles/projekt.dir/src/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/src/game.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game.cpp -o CMakeFiles\projekt.dir\src\game.cpp.s
+
+CMakeFiles/projekt.dir/src/game_state.cpp.obj: CMakeFiles/projekt.dir/flags.make
+CMakeFiles/projekt.dir/src/game_state.cpp.obj: CMakeFiles/projekt.dir/includes_CXX.rsp
+CMakeFiles/projekt.dir/src/game_state.cpp.obj: C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game_state.cpp
+CMakeFiles/projekt.dir/src/game_state.cpp.obj: CMakeFiles/projekt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/projekt.dir/src/game_state.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projekt.dir/src/game_state.cpp.obj -MF CMakeFiles\projekt.dir\src\game_state.cpp.obj.d -o CMakeFiles\projekt.dir\src\game_state.cpp.obj -c C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game_state.cpp
+
+CMakeFiles/projekt.dir/src/game_state.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projekt.dir/src/game_state.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game_state.cpp > CMakeFiles\projekt.dir\src\game_state.cpp.i
+
+CMakeFiles/projekt.dir/src/game_state.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projekt.dir/src/game_state.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\src\game_state.cpp -o CMakeFiles\projekt.dir\src\game_state.cpp.s
+
 # Object files for target projekt
 projekt_OBJECTS = \
 "CMakeFiles/projekt.dir/main.cpp.obj" \
 "CMakeFiles/projekt.dir/src/board.cpp.obj" \
-"CMakeFiles/projekt.dir/src/snake.cpp.obj"
+"CMakeFiles/projekt.dir/src/snake.cpp.obj" \
+"CMakeFiles/projekt.dir/src/game.cpp.obj" \
+"CMakeFiles/projekt.dir/src/game_state.cpp.obj"
 
 # External object files for target projekt
 projekt_EXTERNAL_OBJECTS =
@@ -125,13 +157,15 @@ projekt_EXTERNAL_OBJECTS =
 projekt.exe: CMakeFiles/projekt.dir/main.cpp.obj
 projekt.exe: CMakeFiles/projekt.dir/src/board.cpp.obj
 projekt.exe: CMakeFiles/projekt.dir/src/snake.cpp.obj
+projekt.exe: CMakeFiles/projekt.dir/src/game.cpp.obj
+projekt.exe: CMakeFiles/projekt.dir/src/game_state.cpp.obj
 projekt.exe: CMakeFiles/projekt.dir/build.make
 projekt.exe: _deps/raylib-build/raylib/libraylib.a
 projekt.exe: _deps/raylib-build/raylib/external/glfw/src/libglfw3.a
 projekt.exe: CMakeFiles/projekt.dir/linkLibs.rsp
 projekt.exe: CMakeFiles/projekt.dir/objects1.rsp
 projekt.exe: CMakeFiles/projekt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable projekt.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable projekt.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\projekt.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

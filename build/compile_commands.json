@@ -19,6 +19,18 @@
 },
 {
   "directory": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles/projekt.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\projekt.dir\\src\\game.cpp.obj -c C:\\Users\\jakub\\PROI\\projekt\\gra_achtung_die_kurve\\src\\game.cpp",
+  "file": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game.cpp",
+  "output": "CMakeFiles/projekt.dir/src/game.cpp.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles/projekt.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\projekt.dir\\src\\game_state.cpp.obj -c C:\\Users\\jakub\\PROI\\projekt\\gra_achtung_die_kurve\\src\\game_state.cpp",
+  "file": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game_state.cpp",
+  "output": "CMakeFiles/projekt.dir/src/game_state.cpp.obj"
+},
+{
+  "directory": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP @CMakeFiles/projekt_tests.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles\\projekt_tests.dir\\tests\\test_snake.cpp.obj -c C:\\Users\\jakub\\PROI\\projekt\\gra_achtung_die_kurve\\tests\\test_snake.cpp",
   "file": "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/tests/test_snake.cpp",
   "output": "CMakeFiles/projekt_tests.dir/tests/test_snake.cpp.obj"

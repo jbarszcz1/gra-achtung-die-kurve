@@ -148,14 +148,6 @@ CMakeFiles/projekt.dir/src/snake.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
  C:/msys64/ucrt64/include/_mingw_stdarg.h \
- C:/msys64/ucrt64/include/c++/13.2.0/unordered_map \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/unordered_map.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable_policy.h \
- C:/msys64/ucrt64/include/c++/13.2.0/ext/aligned_buffer.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/enable_special_members.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/node_handle.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/13.2.0/vector \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_vector.h \
@@ -163,6 +155,8 @@ CMakeFiles/projekt.dir/src/snake.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/vector.tcc \
  C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/headers/board.h \
  C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/headers/snake.h \
+ C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/headers/button_data.h \
+ C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/headers/game_state.h \
  C:/msys64/ucrt64/include/c++/13.2.0/cmath \
  C:/msys64/ucrt64/include/math.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/specfun.h \
@@ -187,6 +181,7 @@ CMakeFiles/projekt.dir/src/snake.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_tempbuf.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ranges_algo.h \
  C:/msys64/ucrt64/include/c++/13.2.0/optional \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/enable_special_members.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ranges_algobase.h \
  C:/msys64/ucrt64/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
  C:/msys64/ucrt64/include/c++/13.2.0/pstl/execution_defs.h

@@ -42,6 +42,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FindPython3.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/FindThreads.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
+  "C:/Program Files/CMake/share/cmake-3.29/Modules/GoogleTest.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake"
   "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake"

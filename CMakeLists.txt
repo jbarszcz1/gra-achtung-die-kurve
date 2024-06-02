@@ -39,16 +39,15 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} raylib m)
 
-set(TEST_FILES tests/test_snake.cpp)
-
-include_directories(tests)
+set(TEST_FILES tests/test_snake.cpp )
 
 
-# set(TEST_FILES
-#     tests/test_snake.cpp
-# )
-# Dodanie pliku wykonywalnego testów
-add_executable(${PROJECT_NAME}_tests ${TEST_FILES} src/snake.cpp)
+
+add_executable(${PROJECT_NAME}_tests ${TEST_FILES} src/snake.cpp )
 
 # Linkowanie bibliotek do pliku wykonywalnego testów
 target_link_libraries(${PROJECT_NAME}_tests gtest gtest_main raylib m)
+
+# Dodanie testów do CMake
+include(GoogleTest)
+gtest_discover_tests(projekt_tests)

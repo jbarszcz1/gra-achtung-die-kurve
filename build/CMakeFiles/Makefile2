@@ -202,12 +202,12 @@ CMakeFiles/projekt.dir/all: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 CMakeFiles/projekt.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=31,32,33,34 "Built target projekt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=31,32,33,34,35,36 "Built target projekt"
 .PHONY : CMakeFiles/projekt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/projekt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/projekt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles 0
 .PHONY : CMakeFiles/projekt.dir/rule
@@ -227,11 +227,11 @@ CMakeFiles/projekt.dir/clean:
 # All Build rule for target.
 CMakeFiles/projekt_tests.dir/all: _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 CMakeFiles/projekt_tests.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
-CMakeFiles/projekt_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/projekt_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+CMakeFiles/projekt_tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt_tests.dir\build.make CMakeFiles/projekt_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=35,36,37 "Built target projekt_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=37,38,39 "Built target projekt_tests"
 .PHONY : CMakeFiles/projekt_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -257,7 +257,7 @@ CMakeFiles/projekt_tests.dir/clean:
 _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all: _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\CMakeFiles\raylib.dir\build.make _deps/raylib-build/raylib/CMakeFiles/raylib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=38,39,40,41,42,43,44,45 "Built target raylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=40,41,42,43,44,45,46,47 "Built target raylib"
 .PHONY : _deps/raylib-build/raylib/CMakeFiles/raylib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -309,7 +309,7 @@ _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/clean:
 _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings.dir\build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\raylib-build\raylib\external\glfw\src\CMakeFiles\update_mappings.dir\build.make _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=46 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\jakub\PROI\projekt\gra_achtung_die_kurve\build\CMakeFiles --progress-num=48 "Built target update_mappings"
 .PHONY : _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.

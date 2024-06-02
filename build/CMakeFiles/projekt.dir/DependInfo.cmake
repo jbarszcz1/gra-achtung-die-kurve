@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/main.cpp" "CMakeFiles/projekt.dir/main.cpp.obj" "gcc" "CMakeFiles/projekt.dir/main.cpp.obj.d"
   "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/board.cpp" "CMakeFiles/projekt.dir/src/board.cpp.obj" "gcc" "CMakeFiles/projekt.dir/src/board.cpp.obj.d"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game.cpp" "CMakeFiles/projekt.dir/src/game.cpp.obj" "gcc" "CMakeFiles/projekt.dir/src/game.cpp.obj.d"
+  "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/game_state.cpp" "CMakeFiles/projekt.dir/src/game_state.cpp.obj" "gcc" "CMakeFiles/projekt.dir/src/game_state.cpp.obj.d"
   "C:/Users/jakub/PROI/projekt/gra_achtung_die_kurve/src/snake.cpp" "CMakeFiles/projekt.dir/src/snake.cpp.obj" "gcc" "CMakeFiles/projekt.dir/src/snake.cpp.obj.d"
   )
 

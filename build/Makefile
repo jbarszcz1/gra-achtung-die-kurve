@@ -355,6 +355,54 @@ src/board.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/board.cpp.s
 .PHONY : src/board.cpp.s
 
+src/game.obj: src/game.cpp.obj
+.PHONY : src/game.obj
+
+# target to build an object file
+src/game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game.cpp.obj
+.PHONY : src/game.cpp.obj
+
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
+
+src/game_state.obj: src/game_state.cpp.obj
+.PHONY : src/game_state.obj
+
+# target to build an object file
+src/game_state.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game_state.cpp.obj
+.PHONY : src/game_state.cpp.obj
+
+src/game_state.i: src/game_state.cpp.i
+.PHONY : src/game_state.i
+
+# target to preprocess a source file
+src/game_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game_state.cpp.i
+.PHONY : src/game_state.cpp.i
+
+src/game_state.s: src/game_state.cpp.s
+.PHONY : src/game_state.s
+
+# target to generate assembly for a file
+src/game_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projekt.dir\build.make CMakeFiles/projekt.dir/src/game_state.cpp.s
+.PHONY : src/game_state.cpp.s
+
 src/snake.obj: src/snake.cpp.obj
 .PHONY : src/snake.obj
 
@@ -436,6 +484,12 @@ help:
 	@echo ... src/board.obj
 	@echo ... src/board.i
 	@echo ... src/board.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/game_state.obj
+	@echo ... src/game_state.i
+	@echo ... src/game_state.s
 	@echo ... src/snake.obj
 	@echo ... src/snake.i
 	@echo ... src/snake.s
