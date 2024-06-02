@@ -12,6 +12,12 @@ private:
 public:
     Game();
     void run();
+
+    // Getters
+    GameState get_state() const;
+
+    // Setters (for testing purposes)
+    void set_state(const GameState& new_state);
 };
 
 #endif // GAME_H

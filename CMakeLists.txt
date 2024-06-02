@@ -5,10 +5,8 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-
 include(FetchContent)
 
-# Konfiguracja Raylib
 set(RAYLIB_VERSION 4.5.0)
 FetchContent_Declare(
     raylib
@@ -18,7 +16,6 @@ set(BUILD_EXAMPLES OFF CACHE INTERNAL "")
 FetchContent_MakeAvailable(raylib)
 include_directories(${raylib_SOURCE_DIR}/src)
 
-# Konfiguracja GoogleTest
 FetchContent_Declare(
     googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
@@ -34,21 +31,23 @@ set(SOURCE_FILES main.cpp src/board.cpp src/snake.cpp src/game.cpp src/game_stat
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/headers)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
-
-# Dodanie pliku wykonywalnego głównego projektu
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} raylib m)
 
-set(TEST_FILES tests/test_snake.cpp)
+set(TEST_FILES
+    tests/test_snake.cpp
+    tests/test_board.cpp
+    tests/test_game.cpp
+    tests/test_state.cpp
+)
 
 include_directories(tests)
 
+add_executable(${PROJECT_NAME}_unit_tests ${TEST_FILES} src/snake.cpp src/board.cpp src/game.cpp src/game_state.cpp)
 
-# set(TEST_FILES
-#     tests/test_snake.cpp
-# )
-# Dodanie pliku wykonywalnego testów
-add_executable(${PROJECT_NAME}_tests ${TEST_FILES} src/snake.cpp)
+target_link_libraries(${PROJECT_NAME}_unit_tests gtest gtest_main raylib m)
 
-# Linkowanie bibliotek do pliku wykonywalnego testów
-target_link_libraries(${PROJECT_NAME}_tests gtest gtest_main raylib m)
+add_test(NAME SnakeTests COMMAND ${PROJECT_NAME}_unit_tests)
+add_test(NAME BoardTests COMMAND ${PROJECT_NAME}_unit_tests)
+add_test(NAME GameTests COMMAND ${PROJECT_NAME}_unit_tests)
+add_test(NAME StateTests COMMAND ${PROJECT_NAME}_unit_tests)
