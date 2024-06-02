@@ -1,15 +1,7 @@
+#include "game.h"
 
-#include <iostream>
-#include <vector>
-#include "board.h"
-#include "snake.h"
-
-int main()
-{
-    std::vector<Snake> Players;
-    Board board(Players);
-    board.display_window();
-
+int main() {
+    Game game;
+    game.run();
     return 0;
 }
-
