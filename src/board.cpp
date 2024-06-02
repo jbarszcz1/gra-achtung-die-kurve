@@ -1,26 +1,36 @@
 #include "board.h"
-#include <algorithm>
 #include "raylib.h"
 #include <iostream>
+#include <algorithm>
 
+
+// Overload to further initialize snakes correctly
 bool operator==(const Color& lhs, const Color& rhs) {
     return (lhs.r == rhs.r && lhs.g == rhs.g && lhs.b == rhs.b && lhs.a == rhs.a);
 }
 
+
 Board::Board(GameState& gameState) : state(gameState) {
+    // Initialize buttons for player to choose his color
     buttons.push_back({{screen_width / 2 - 450, 300, 100, 50}, false, false, false, false, false, '\0', '\0', RED, "RED"});
     buttons.push_back({{screen_width / 2 - 450, 400, 150, 50}, false, false, false, false, false, '\0', '\0', GREEN, "GREEN"});
     buttons.push_back({{screen_width / 2 - 450, 500, 170, 50}, false, false, false, false, false, '\0', '\0', PURPLE, "PURPLE"});
     buttons.push_back({{screen_width / 2 - 450, 600, 170, 50}, false, false, false, false, false, '\0', '\0', ORANGE, "ORANGE"});
 }
 
+
+// Screens handling
+
+// Title screen where players are added
 void Board::handle_title_screen(Vector2 mousePoint) {
     for (auto& button : buttons) {
+        // Check if the button is clicked
         if (CheckCollisionPointRec(mousePoint, button.bounds) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {
             button.clicked = true;
             button.textBoxLeftActive = true;
         }
 
+        // Handle left key input for player control and check if keys aren't repeated
         if (button.textBoxLeftActive) {
             bool unique = true;
             int keyLeft = GetCharPressed();
@@ -38,6 +48,7 @@ void Board::handle_title_screen(Vector2 mousePoint) {
             }
         }
 
+        // Handle right key input for player control
         if (button.clicked && !button.textBoxLeftActive) {
             button.textBoxRightActive = true;
             button.clicked = false;
@@ -59,6 +70,7 @@ void Board::handle_title_screen(Vector2 mousePoint) {
                 button.textBoxRightActive = false;
             }
 
+            // Add the snake with specified control keys if both keys are set
             if (button.drawKeyLeft && button.drawKeyRight) {
                 state.Players.erase(std::remove_if(state.Players.begin(), state.Players.end(), [&button](Snake& snake) {
                     return snake.get_color() == button.color;
@@ -69,6 +81,8 @@ void Board::handle_title_screen(Vector2 mousePoint) {
         }
     }
 
+
+    // If at least 2 players are set, the game starts
     if (IsKeyPressed(KEY_ENTER)) {
         int activePlayers = 0;
         for (const auto& button : buttons) {
@@ -78,7 +92,7 @@ void Board::handle_title_screen(Vector2 mousePoint) {
         }
 
         if (activePlayers >= 2) {
-            state.current_screen = GAMEPLAY;
+            state.currentScreen = GAMEPLAY;
             state.countdownActive = true;
             state.countdownStartTime = GetTime();
         } else {
@@ -88,12 +102,14 @@ void Board::handle_title_screen(Vector2 mousePoint) {
     }
 }
 
+// Gameplay screen
 void Board::handle_gameplay_screen() {
     if (IsKeyPressed(KEY_ENTER) && state.gameOver) {
-        state.current_screen = SCORE;
+        state.currentScreen = SCORE;
     }
 
     double currentTime = GetTime();
+    // Handle countdown before the snakes start moving
     if (state.countdownActive) {
         if (currentTime - state.countdownStartTime >= 1.0) {
             state.countdownValue--;
@@ -105,9 +121,10 @@ void Board::handle_gameplay_screen() {
         }
     } else if (state.gameOver) {
         if (currentTime - state.gameOverStartTime >= state.gameOverDuration) {
-            state.current_screen = SCORE;
+            state.currentScreen = SCORE;
         }
     } else {
+        // Update player positions and check for collisions
         for (Snake& player : state.Players) {
             if (player.is_active) {
                 player.update();
@@ -121,6 +138,7 @@ void Board::handle_gameplay_screen() {
     }
 }
 
+// Score screen
 void Board::handle_score_screen() {
     if (IsKeyPressed(KEY_ENTER)) {
         for (auto& button : buttons) {
@@ -129,13 +147,17 @@ void Board::handle_score_screen() {
             button.drawKeyLeft = false;
             button.drawKeyRight = false;
         }
-        state.current_screen = TITLE;
+        state.currentScreen = TITLE;
         state.Players.clear();
         state.gameOver = false;
         state.countdownValue = 3;
     }
 }
 
+
+// Drawing methods
+
+// Title screen
 void Board::draw_title_screen() {
     DrawRectangle(0, 0, screen_width, screen_height, BLACK);
     DrawText("Achtung die Kurve!", screen_width / 2 - 200, 75, 40, PINK);
@@ -160,6 +182,7 @@ void Board::draw_title_screen() {
     }
 }
 
+// Gameplay screen
 void Board::draw_gameplay_screen() {
     DrawRectangle(0, 0, screen_width, screen_height, LIGHTGRAY);
 
@@ -182,6 +205,7 @@ void Board::draw_gameplay_screen() {
     }
 }
 
+// Score screen
 void Board::draw_score_screen() {
     Color winnerColor;
     std::string winnerColorStr;
@@ -194,6 +218,8 @@ void Board::draw_score_screen() {
     DrawText(promptText.c_str(), screen_width / 2 - promptWidth / 2, screen_height / 2 + 20, 20, winnerColor);
 }
 
+
+// Check for all possible collisions
 void Board::check_collisions(std::vector<Snake>& Players) {
     for (Snake& snake : Players) {
         if (!snake.is_active) continue;
@@ -208,6 +234,8 @@ void Board::check_collisions(std::vector<Snake>& Players) {
     }
 }
 
+
+// Getters
 float Board::get_screen_width() const {
     return screen_width;
 }

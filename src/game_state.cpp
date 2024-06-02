@@ -1,5 +1,7 @@
 #include "game_state.h"
 
+
+// Getters
 std::tuple<Color, std::string> GameState::get_winner_color() const {
     for (const Snake& snake : Players) {
         if (snake.is_active) {
