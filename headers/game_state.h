@@ -11,6 +11,11 @@ enum GameScreen { TITLE = 0, GAMEPLAY, SCORE };
 // Class to create a state instance shared by Board and Game
 class GameState {
 public:
+    // Constructors
+    GameState() = default;
+    GameState(const GameState& other); // Copy constructor
+    GameState& operator=(const GameState& other);
+
     // Game data
     GameScreen currentScreen = TITLE;
     std::vector<Snake> Players;

@@ -53,3 +53,12 @@ void Game::run() {
 
     CloseWindow();
 }
+
+// Getters and setters for testing purposes
+GameState Game::get_state() const {
+    return state;
+}
+
+void Game::set_state(const GameState& new_state) {
+    state = new_state;
+}
